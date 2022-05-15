@@ -1,0 +1,4 @@
+#!/bin/sh
+
+#randomize images
+feh --no-fehbg --bg-fill --randomize  '/home/chesfire/Pictures/'

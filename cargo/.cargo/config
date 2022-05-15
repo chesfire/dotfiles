@@ -1,0 +1,30 @@
+[alias]
+a = "add"
+b = "build"
+br = "build --release"
+brr = "build --release"
+r = "run"
+rr = "run --release"
+c = "check"
+f = "fmt"
+t = "test"
+pp = "clippy"
+clr = "clean"
+upd = "update"
+trp = "tarpaulin -o Xml -v"
+d = "doc"
+i = "install"
+o = "outdated -Rv"
+
+[net]
+git-fetch-with-cli = true
+
+[build]
+rustc-wrapper = "sccache"
+
+[target.x86_64-pc-windows-gnu]
+linker = "/usr/bin/x86_64-w64-mingw32-gcc"
+ar = "/usr/x86_64-w64-mingw32/bin/ar"
+
+[target.arm-unknown-linux-gnueabihf]
+linker = "/usr/bin/arm-linux-gnueabihf-gcc"

@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+alias god='git status && git-repl'
+alias gco='git checkout $(gb)'
+alias gtv='git tag -v $(gt)'
+alias gpp='git pull $(gr) $(gb)'
+alias gps='git push $(gr) $(gb)'
+alias gcpy='git rev-parse $(gl) | c'
+
+alias ghpr='gh pr create'
+alias ghrun='gh run watch $(gh run list -L 1 --json databaseId -q '.[].databaseId') --exit-status -i 1 ; notify'

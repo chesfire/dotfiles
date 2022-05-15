@@ -1,0 +1,19 @@
+#Take Screenshot
+"screenshot"
+  Print
+
+#Raise Volume
+"amixer set Master 5%+"
+  Mod4 + Up
+
+#Decrease Volume
+"amixer set Master 5%-"
+  Mod4 + Down
+
+#Increase Brightness
+"xbacklight -inc 10"
+  Mod4 + Right
+
+#Decrease Brightness
+"xbacklight -dec 10"
+  Mod4 + Left

@@ -1,0 +1,58 @@
+[user]
+	name = chesfire 
+	email = belchezchristian@gmail.com
+	signingkey = A0B41FFA2A4B9EF14B5E5CEE7CD0428653A2A302 
+[gpg]
+	program = gpg
+[url "ssh://git@github.com/"]
+  insteadOf = https://github.com/
+[url "ssh://git@gitlab.com/"]
+  insteadOf = https://gitlab.com/
+[alias]
+	c = clone
+	i = init
+	a = add
+	aa = add -A
+	m = mv
+	r = restore
+	rm = rm
+	b = bisect
+	d = diff
+	dc = diff --cached
+	g = grep
+	sh = show
+	st = status
+	br = branch
+	mr = merge
+	rb = rebase
+	rs = restore --staged
+	rst = restore
+	t = tag
+	f = fetch
+	p = pull
+	ps = push
+	psmt = "push origin master"
+	psmi = "push origin main"
+	cm = commit
+	cmt = commit -m
+	rmt = remote -v
+	cb = checkout -b
+	ck = checkout
+	l = log
+	lo = log --graph --decorate --all
+	ll = log --graph --decorate --oneline --all
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	la = log --pretty=format:'[%h] %cd - Committer: %cn (%ce), Author: %an (%ae)'
+	ls = ls-files
+	crds = config credential.helper store
+	ups = config --get remote.origin.url
+	yolo = !git commit -m \"$(curl -s whatthecommit.com/index.txt)\"
+	godsays = !git commit -m \"$(curl -s https://godsays.xyz)\"
+[commit]
+	template = ~/.git-commit-template
+	gpgsign = true
+	verbose = true
+[core]
+	editor = vim
+[init]
+	defaultBranch = master
